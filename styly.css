@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #292929;
+    font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2,
+p {
+color: whitesmoke;
+    margin: 1.6rem 0;
+    font-size: 1.4rem;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 3.6rem;
+}
+
+h2 {
+    font-weight: 800;
+    font-size: 2.4rem;
+}
+
+h3{
+    color: whitesmoke;
+}
+
+img {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+section {
+    padding: 100px 0;
+}
+
+
+/*-------------------- scroll button--------------------*/
+
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #EB7646;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+
+
+/*-------------------- Header --------------------*/
+
+
+header {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)), url('pics/uvod.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.header-about{
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)), url('pics/historie3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.header-sortiment{
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)), url('pics/sortiment.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.header-slavnost{
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)), url('pics/koncert5.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.header-content {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-logo {
+    width: 350px;
+}
+
+#header-nadpis {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+}
+
+
+/*-------------------- Navigace --------------------*/
+
+
+li,
+a,
+button {
+    font-size: 20px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+nav {
+    padding: 2% 8%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 10%;
+}
+
+.logo {
+    width: 150px;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+ul li a {
+    transition: all 0.3s ease 0s;
+}
+
+ul li a:hover {
+    color: #EB7646;
+}
+
+nav box-icon {
+    display: none;
+}
+
+
+/*-------------------- About 1 --------------------*/
+
+
+.about-left,
+.about-right,
+.about-middle {
+    flex-basis: 30%;
+    padding: 1.6rem;
+    background-color: #505050;
+    margin: 20px 0;
+}
+
+.about-photo {
+    border-radius: 5px;
+}
+
+.btn {
+    color: #EB7646;
+    font-size: 20px;
+    padding: 8px 16px;
+    display: inline-block;
+    margin: 2rem 0;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.btn:hover {
+    color: red;
+}
+
+
+/*-------------------- About 2 --------------------*/
+
+
+.about2 {
+    background-color: #222;
+}
+
+.about2-left {
+    flex-basis: 40%;
+}
+
+.about2-right {
+    flex-basis: 50%;
+}
+
+.card {
+    padding: 10px;
+    border-radius: 30px;
+    width: 60%;
+}
+
+#highlighted {
+    color: #EB7646;
+}
+
+.logo_about{
+    width: 50%;
+}
+
+hr{
+    height: 1px;
+    background-color: #EB7646;
+    border: none;
+}
+
+
+/*-------------------- About(Sortiment) --------------------*/
+
+
+.sortiment .beer {
+    background-color: #505050;
+    padding: 4rem;
+    margin: 1rem;
+    flex-basis: 50%;
+}
+
+.sortiment img {
+    width: 60%;
+    border-radius: 50%;
+}
+
+
+/*-------------------- Contact --------------------*/
+
+
+#contact-nadpis{
+    color: #EB7646;
+    text-align: center;
+}
+
+.contact .row {
+    justify-content: center;
+}
+
+.contact{
+    background-color: #222;
+}
+
+.contact form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact textarea {
+    width: 50%;
+    height: 150px;
+    padding: 12px 20px;
+    font-size: 1.3rem;
+    margin: 1.2rem 0;
+}
+
+input {
+    font-size: 1.8rem;
+}
+
+input[type=text],
+input[type=email] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 1.2rem 0;
+    display: block;
+    border: 1px solid #ccc;
+}
+
+input[type=submit] {
+    width: 50%;
+    background-color: #EB7646;
+    color: #fff;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input::placeholder {
+    font-size: 1.3rem;
+    color: #ccc;
+}
+
+
+/*-------------------- Footer --------------------*/
+footer {
+    height: 80px;
+    background-color: #222;
+    color: #fff;
+    line-height: 80px;
+    text-align: center;
+}
+
+@media only screen and (max-width:1080px){
+    .row {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width:800px) {
+
+    nav {
+        flex-direction: column;
+        position: relative;
+    }
+
+    nav box-icon {
+        display: block;
+        position: absolute;
+        right: 32px;
+    }
+
+    nav ul {
+        background: #292929;
+        display: none;
+    }
+
+    .showmenu {
+        display: block;
+        border: 1px solid white;
+    }
+
+    nav ul li {
+        display: block;
+        padding: 2% 0;
+    }
+
+    nav ul li a {
+        color: white;
+    }
+
+    input[type=text],
+    input[type=email],
+    input[type=submit]{
+        width: 80%;
+        margin:1.2rem auto;
+    }
+
+    .sortiment .beer{
+        margin:1.6rem 0;
+    }
+
+    .contact form input,
+    .contact textarea{
+        width: 100%;
+    }
+}
+
+
+/*-------------------- Page Sortiment --------------------*/
+
+
+.about-pic{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.left{
+    flex-basis: 40%;
+}
+
+.right{
+    flex-basis: 50%;
+}
+
+.btnSwitch{
+    height: 20%;
+    color: #EB7646;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #505050;
+    border: none;
+}
+
+.btnSwitch:hover {
+    color: red;
+}
+
+/*-------------------- Page Slavnost --------------------*/
+
+
+.gallery-pic{
+    border-radius: 5px;
+    width: 15%;
+    cursor: pointer;
+}
+
+.slavnost-popis .row {
+    flex-direction:column;
+}
+
+.slavnost-gallery{
+    background-color: #222;
+}
+
+@media only screen and (max-width:1080px){
+    .slavnost-gallery .row {
+        flex-direction:row;
+    }
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styly.css">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <box-icon name='up-arrow-alt'></box-icon>
+    </button>
+    
+    <header class="header-slavnost">
+        <nav>
+            <a href="index.html">
+                <img class="logo" src="pics/logobi.png" alt="logo">
+            </a>
+            <ul>
+                <li><a href="about.html">O nás</a></li>
+                <li><a href="slavnost.html">Akce</a></li>
+                <li><a href="sortiment.html">Sortiment</a></li>
+            </ul>
+            <box-icon name='menu' color="white" id="menu"></box-icon>
+        </nav>
+        <div class="header-content">
+            <div class="header-contentx"></div>
+            <img class="header-logo" src="pics/logobi.png" alt="logo">
+            <h1 id="header-nadpis">Chuť hor v každé lahvi!</h1>
+        </div>
+    </header>
+
+<section class="slavnost-popis">
+    <div class="row">
+        <h2><span id="highlighted">Pivkovarský</span> večer</h2><br>
+    </div>
+    <div class="row">
+        <p>Pivkovarský večer je každoroční událost pořádaná pivovarem Pivko v Krkonoších. 
+            Tato událost je zaměřena na slavení a propagaci umění pivovarnictví, 
+            kde se návštěvníci mohou ochutnat širokou škálu piv z nabídky pivovaru Pivko a 
+            zažít autentickou atmosféru horského prostředí Krkonoš. Během večera jsou pořádány 
+            koncerty různých hudebních interpretů, doprovodné kulturní akce a degustace piva. 
+            Pivkovarský večer je vhodnou volbou pro milovníky dobrého piva, hudby a 
+            příjemného večerního vyžití.</p>
+    </div>
+    <div class="row">
+        <p>
+            Pivovarský večer je přístupný široké veřejnosti a nabízí nejen možnost ochutnat 
+            různé druhy piva, ale také se dozvědět více o procesu jeho výroby. Odborníci z 
+            pivovaru Pivko budou k dispozici pro zodpovězení dotazů a poskytnutí informací o 
+            výrobě piva a jeho historii. Tuto akci si mohou užít rodiny s dětmi, stejně jako 
+            skupiny přátel, kteří hledají zábavu a relaxaci v jedinečném prostředí Krkonoš.
+        </p>
+    </div>
+</section>
+
+<section class="slavnost-gallery">
+        <div class="row">
+            <div class="gallery-pic">
+              <img src="pics/1.jpg" alt="Nature" onclick="myFunction(this);">
+            </div>
+            <div class="gallery-pic">
+              <img src="pics/2.jpg" alt="Snow" onclick="myFunction(this);">
+            </div>
+            <div class="gallery-pic">
+              <img src="pics/3.jpg" alt="Mountains" onclick="myFunction(this);">
+            </div>
+            <div class="gallery-pic">
+              <img src="pics/4.jpg" alt="Lights" onclick="myFunction(this);">
+            </div>
+            <div class="gallery-pic">
+                <img src="pics/5.jpg" alt="Lights" onclick="myFunction(this);">
+            </div>
+            <div class="gallery-pic">
+                <img src="pics/6.jpg" alt="Lights" onclick="myFunction(this);">
+            </div>
+          </div>
+      <br>
+        <div class="row"> 
+            <button class="btnSwitch" onclick="previousImage()">Předchozí</button>     
+            <img id="expandedImg" style="width:50%">
+            <button class="btnSwitch" onclick="nextImage()">Následující</button>
+      </div>
+</section>
+
+<footer>
+    <img class="logo" src="pics/logobi.png" alt="logo">
+</footer>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
